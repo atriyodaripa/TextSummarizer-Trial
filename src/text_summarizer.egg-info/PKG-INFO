@@ -1,3 +1,13 @@
+Metadata-Version: 2.1
+Name: text_summarizer
+Version: 0.0.0
+Summary: A text summarizer application
+Home-page: https://github.com/atriyo.daripa/Text_Summarizer
+Author: atriyo.daripa
+Author-email: atriyo.daripa@gmail.com
+Project-URL: Bug Tracker, https://github.com/atriyo.daripa/Text_Summarizer/issues
+Description-Content-Type: text/markdown
+
 # E to E TextSummarizer-Trial project
 
 ## Workflows
