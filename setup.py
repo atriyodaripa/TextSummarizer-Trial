@@ -28,5 +28,5 @@ setuptools.setup(
 )
 
 ## Correct way to run setup.py
-## python setup.py build
+## python setup.py install
 ## python setup.py build
