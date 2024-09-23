@@ -32,20 +32,23 @@ try:
 except Exception as e:
     raise e
 
-STAGE_NAME = "Model Trainer Stage"
-try:
-    logger.info(f">>>>>>>>> stage {STAGE_NAME} started <<<<<<<<<<")
-    model_training = ModelTrainerTrainingPipeline()
-    model_training.main()
-    logger.info(f">>>>>>>>> stage {STAGE_NAME} completed <<<<<<<<<<\n\nx===================x")
-except Exception as e:
-    raise e
+## Commenting out this section as we are using pre-trained model on samsum dataset from huggINGFACE
+## as we do not have required GPU to train the model on the go
 
-STAGE_NAME = "Model Evaluation Stage"
-try:
-    logger.info(f">>>>>>>>> stage {STAGE_NAME} started <<<<<<<<<<")
-    model_evaluation = ModelEvaluationPipeline()
-    model_evaluation.main()
-    logger.info(f">>>>>>>>> stage {STAGE_NAME} completed <<<<<<<<<<\n\nx===================x")
-except Exception as e:
-    raise e
+# STAGE_NAME = "Model Trainer Stage"
+# try:
+#     logger.info(f">>>>>>>>> stage {STAGE_NAME} started <<<<<<<<<<")
+#     model_training = ModelTrainerTrainingPipeline()
+#     model_training.main()
+#     logger.info(f">>>>>>>>> stage {STAGE_NAME} completed <<<<<<<<<<\n\nx===================x")
+# except Exception as e:
+#     raise e
+
+# STAGE_NAME = "Model Evaluation Stage"
+# try:
+#     logger.info(f">>>>>>>>> stage {STAGE_NAME} started <<<<<<<<<<")
+#     model_evaluation = ModelEvaluationPipeline()
+#     model_evaluation.main()
+#     logger.info(f">>>>>>>>> stage {STAGE_NAME} completed <<<<<<<<<<\n\nx===================x")
+# except Exception as e:
+#     raise e
